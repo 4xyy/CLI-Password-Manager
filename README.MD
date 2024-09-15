@@ -11,9 +11,20 @@ A command-line tool for securely managing passwords. It allows users to store, r
 ## Installation
 Clone the repository and set up a virtual environment:
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/CLI-Password-Manager.git
+git clone https://github.com/4xyy/CLI-Password-Manager.git
 cd CLI-Password-Manager
 python3 -m venv .venv
 source .venv/bin/activate
 pip install cryptography
 
+Usage
+Setup the Password Manager:
+python password_manager.py --setup
+Add a New Password:
+python password_manager.py --add service_name username password
+Retrieve a Password:
+python password_manager.py --get service_name
+Delete a Password:
+python password_manager.py --delete service_name
+Generate a Random Password:
+python password_manager.py --generate 16
